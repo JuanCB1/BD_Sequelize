@@ -1,4 +1,4 @@
-# BD_TypeORM
+# BD_Sequelize
 Projeto de exemplo de banco de dados interativo usando **Sequelize** e **SQLite** em Node.js.
 
 ---
@@ -67,7 +67,7 @@ Este comando vai instalar automaticamente:
    - Clone com `git clone` ou faça download do ZIP e extraia para uma pasta.
    - Entre na pasta:  
      ```bash
-     cd pi
+     cd BD_Sequelize
      ```
 
 2. **Instale as dependências**  
@@ -76,26 +76,19 @@ Este comando vai instalar automaticamente:
    ```
    Isso baixa o Sequelize, o driver SQLite.
 
-3. **(Opcional) Configure o `.env`**  
-   Crie um arquivo `.env` na raiz e personalize:
-   ```env
-   DATABASE_STORAGE=database.sqlite
-   DATABASE_LOGGING=false
-   ```
-
-4. **Inicialize o banco**  
+3. **Inicialize o banco**  
    Rode o script interativo (ele cria o arquivo `database.sqlite` automaticamente se ainda não existir):
    ```bash
    npm start
    ```
    Você verá a mensagem `✅ Banco de dados pronto!` no terminal.
 
-5. **Cadastre seus primeiros dados**  
+4. **Cadastre seus primeiros dados**  
    - Escolha a opção `1` para criar um usuário.  
    - Informe nome, email e role.  
    - O registro é salvo na tabela `users`.
 
-6. **Verifique se deu certo**  
+5. **Verifique se deu certo**  
    - Use a opção `2` para listar todos os usuários.  
    - O arquivo `database.sqlite` aparece na pasta do projeto com os dados salvos.
 
